@@ -393,8 +393,7 @@ class TfPoseEstimator:
 
                 body_part = human.body_parts[i]
 
-                print(human.body_parts)
-                print(body_part.x, body_part.y)
+                print(human.body_parts[i], body_part.x, body_part.y)
                 center = (int(body_part.x * image_w + 0.5), int(body_part.y * image_h + 0.5))
                 centers[i] = center
                 cv2.circle(npimg, center, 3, common.CocoColors[i], thickness=3, lineType=8, shift=0)
