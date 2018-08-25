@@ -3,7 +3,7 @@ import numpy as np
 import os
 import time
 # Playing video from file:
-cap = cv2.VideoCapture('jab2_clearBG.mp4')
+cap = cv2.VideoCapture('jab_clearBG.mp4')
 
 try:
     if not os.path.exists('data'):
