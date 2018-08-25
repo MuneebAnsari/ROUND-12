@@ -2,7 +2,8 @@ import argparse
 import logging
 import sys
 import time
-
+import random
+import os
 from tf_pose import common
 import cv2
 import numpy as np
@@ -48,7 +49,16 @@ if __name__ == '__main__':
     logger.info('inference image: %s in %.4f seconds.' % (args.image, elapsed))
 
     image = TfPoseEstimator.draw_humans(image, humans[0], imgcopy=False)
-    print("Testing")
+
+    try:
+        if not os.path.exists('ProccessedData'):
+            os.makedirs('ProccessedData')
+    except OSError:
+        print ('Error: Creating directory of data')
+    
+    name = './ProccessedData/frame' +str(random.randint(1,101))+ '.jpg'
+    cv2.imwrite(name, image)
+    print("Saving Image")
     # while True:
     #     # cv2.imshow('fdsd', image)
     #     print("Testing")
