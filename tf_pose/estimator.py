@@ -26,6 +26,12 @@ formatter = logging.Formatter('[%(asctime)s] [%(name)s] [%(levelname)s] %(messag
 ch.setFormatter(formatter)
 logger.addHandler(ch)
 
+block_hand_file = open("./keypoint_movement/block_hand_info.txt", "a")
+jab_hand_file = open("./keypoint_movement/jab_hand_info.txt", "a")
+neck_torso_file =  open("./keypoint_movement/neck_torso_info.txt", "a")
+legs_file = open("./keypoint_movement/legs_info.txt", "a")
+
+
 
 def _round(v):
     return int(round(v))
@@ -385,7 +391,9 @@ class TfPoseEstimator:
         image_h, image_w = npimg.shape[:2]
         centers = {}
         if human:
-            mod_keys = [curr for curr in human.body_parts.keys() if curr not in [0,1,2,8,9,10, 11, 12, 14, 15, 16, 17]]
+            #mod_keys = [curr for curr in human.body_parts.keys() if curr not in [0,1,2,8,9,10, 11, 12, 14, 15, 16, 17]]
+            mod_keys = [curr for curr in human.body_parts.keys() if
+                        curr not in [14, 15, 16, 17]]
             # draw point
             for i in range(common.CocoPart.Background.value):
                 if i not in mod_keys:
@@ -394,6 +402,23 @@ class TfPoseEstimator:
                 body_part = human.body_parts[i]
 
                 print(human.body_parts[i], body_part.x, body_part.y)
+
+                # Track left shoulder, left elbow, left wrist
+                if i in [5, 6, 7]:
+                    block_hand_file.write("{},{},{}\n".format(human.body_parts[i], body_part.x, body_part.y))
+
+                # Track right shoulder, right elbow, right wrist
+                if i in [2, 3, 4]:
+                    jab_hand_file.write("{},{},{}\n".format(human.body_parts[i], body_part.x, body_part.y))
+
+                # Track angle between neck, spine and torso
+                if i in [1, 8]:
+                    neck_torso_file.write("{},{},{}\n".format(human.body_parts[i], body_part.x, body_part.y))
+
+                # Track position of legs and angle between the legs and knees
+                if i in [9, 10, 11, 12, 13]:
+                    legs_file.write("{},{},{}\n".format(human.body_parts[i], body_part.x, body_part.y))
+
                 center = (int(body_part.x * image_w + 0.5), int(body_part.y * image_h + 0.5))
                 centers[i] = center
                 cv2.circle(npimg, center, 3, common.CocoColors[i], thickness=3, lineType=8, shift=0)
