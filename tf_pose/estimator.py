@@ -385,7 +385,7 @@ class TfPoseEstimator:
         image_h, image_w = npimg.shape[:2]
         centers = {}
         if human:
-            mod_keys = [curr for curr in human.body_parts.keys() if curr not in [14, 15, 16, 17]]
+            mod_keys = [curr for curr in human.body_parts.keys() if curr not in [0,1,2,8,9,10, 11, 12, 14, 15, 16, 17]]
             # draw point
             for i in range(common.CocoPart.Background.value):
                 if i not in mod_keys:

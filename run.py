@@ -48,5 +48,7 @@ if __name__ == '__main__':
     logger.info('inference image: %s in %.4f seconds.' % (args.image, elapsed))
 
     image = TfPoseEstimator.draw_humans(image, humans[0], imgcopy=False)
-    cv2.imshow('fdsd', image)
-    cv2.waitKey(0)
+    while True:
+        cv2.imshow('fdsd', image)
+        if cv2.waitKey(1) == 27:
+            break
