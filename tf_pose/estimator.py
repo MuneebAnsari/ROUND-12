@@ -412,7 +412,7 @@ class TfPoseEstimator:
                     jab_hand_file.write("{}|{}|{}\n".format(human.body_parts[i], body_part.x, body_part.y))
 
                 # Track angle between neck, spine and torso
-                if i in [1, 8]:
+                if i in [0, 1, 8]:
                     neck_torso_file.write("{}|{}|{}\n".format(human.body_parts[i], body_part.x, body_part.y))
 
                 # Track position of legs and angle between the legs and knees
