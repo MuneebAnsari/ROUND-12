@@ -43,7 +43,6 @@ while left_shoulder_data:
 
 guard_arm_angle_avg = sum(guard_arm_angles) / len(guard_arm_angles)
 
-print(guard_arm_angle_avg)
 
 if TARGET_ANGLE - 5 <= guard_arm_angle_avg <= TARGET_ANGLE + 5:
     feedback_guard_hand.write("Great way to protect yourself in the ring. Keep up the great work!")

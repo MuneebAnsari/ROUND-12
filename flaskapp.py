@@ -27,15 +27,21 @@ def send():
 def sending():
     if request.method=='POST':
         os.system('python testscript.py')
-        return render_template('finalPage.html')
+        os.system('python guard_hand_feedback.py')
+        guard_hand_file = open("./feedback_guard_hand.txt", "r")
+        var =guard_hand_file.readline()
+        os.system('python neck_torso_feedback.py')
+        guard_hand_file = open("./feedback_neck_torso.txt", "r")
+        var2 =guard_hand_file.readline()
+        return render_template('finalPage.html',variable=var,variable2=var2)
 
 @app.route('/getGuardInfo',methods=['GET','POST'])
 def getGuardStatus():
     if request.method=='POST':
         os.system('python guard_hand_feedback.py')
-        # guard_hand_file = open("./feedback_modules/feedback_guard_hand.txt", "r")
-        # print(guard_hand_file)
-        return render_template('finalPage.html')
+        guard_hand_file = open("./feedback_guard_hand.txt", "r")
+        var =guard_hand_file.readline()
+        return render_template('finalPage.html',variable=var)
 
 if __name__=="__main__":
     app.run()
