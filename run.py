@@ -29,7 +29,7 @@ if __name__ == '__main__':
                         help='if provided, resize images before they are processed. default=0x0, Recommends : 432x368 or 656x368 or 1312x736 ')
     parser.add_argument('--resize-out-ratio', type=float, default=4.0,
                         help='if provided, resize heatmaps before they are post-processed. default=1.0')
-
+    parser.add_argument('--index', type=int, default=0)
     args = parser.parse_args()
 
     w, h = model_wh(args.resize)
@@ -57,7 +57,7 @@ if __name__ == '__main__':
     except OSError:
         print ('Error: Creating directory of data')
 
-    name = './ProccessedData/frame' + uuid.uuid4().hex + '.jpg'
+    name = './ProccessedData/frame' + str(args.index) + '.jpg'
 
     cv2.imwrite(name, image)
     print("Saving Image")

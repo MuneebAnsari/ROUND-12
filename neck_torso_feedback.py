@@ -2,7 +2,7 @@ import math
 
 TARGET_ANGLE = 150
 
-feedback_neck_torso = open("feedback_neck_tors.txt", "a")
+feedback_neck_torso = open("feedback_neck_torso.txt", "a")
 neck_torso_file = open("./keypoint_movement/neck_torso_info.txt", "r")
 
 neck_torso_angles = []
