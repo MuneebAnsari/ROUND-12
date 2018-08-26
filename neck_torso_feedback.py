@@ -8,17 +8,18 @@ neck_torso_file = open("./keypoint_movement/neck_torso_info.txt", "r")
 neck_torso_angles = []
 
 nose_data = neck_torso_file.readline()
-
-while nose_data:
+neck_data = neck_torso_file.readline()
+torso_data = neck_torso_file.readline()
+while nose_data and neck_data and torso_data:
     x = nose_data.split("|")
-    neck_data = neck_torso_file.readline().split("|")
-    torso_data = neck_torso_file.readline().split("|")
+    y = neck_data.split("|")
+    z = torso_data.split("|")
 
     if x and neck_data and torso_data:
         # x,y coordinates for keypoints from neck to torso
         nose_x, nose_y = x[1], x[2]
-        neck_x, neck_y = neck_data[1], neck_data[2]
-        torso_x, torso_y = torso_data[1], torso_data[2]
+        neck_x, neck_y = y[1], y[2]
+        torso_x, torso_y = z[1], z[2]
 
         vector_A = (float(nose_x) - float(neck_x), float(nose_y) - float(neck_y))
         vector_B = (float(torso_x) - float(neck_x), float(torso_y) - float(neck_y))
@@ -34,6 +35,8 @@ while nose_data:
         neck_torso_angles.append(neck_torso_angle)
 
     nose_data = neck_torso_file.readline()
+    neck_data = neck_torso_file.readline()
+    torso_data = neck_torso_file.readline()
 
 neck_torso_angle_avg = sum(neck_torso_angles) / len(neck_torso_angles)
 

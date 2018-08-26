@@ -8,18 +8,20 @@ guard_hand_file = open("./keypoint_movement/block_hand_info.txt", "r")
 guard_arm_angles = []
 
 left_shoulder_data = guard_hand_file.readline()
+left_elbow_data = guard_hand_file.readline()
+left_wrist_data = guard_hand_file.readline()
 
-while left_shoulder_data:
+while left_shoulder_data and left_elbow_data and left_wrist_data:
     x = left_shoulder_data.split("|")
-    left_elbow_data = guard_hand_file.readline().split("|")
-    left_wrist_data = guard_hand_file.readline().split("|")
+    y = left_elbow_data.split("|")
+    z = left_wrist_data.split("|")
 
     if x and left_elbow_data and left_wrist_data:
 
         # x,y coordinates for keypoints on guard arm
         left_shoulder_x, left_shoulder_y = x[1], x[2]
-        left_elbow_x, left_elbow_y = left_elbow_data[1], left_elbow_data[2]
-        left_wrist_x, left_wrist_y = left_wrist_data[1], left_wrist_data[2]
+        left_elbow_x, left_elbow_y = y[1], y[2]
+        left_wrist_x, left_wrist_y = z[1], z[2]
 
 
 
@@ -41,6 +43,8 @@ while left_shoulder_data:
         guard_arm_angles.append(guard_arm_angle)
 
     left_shoulder_data = guard_hand_file.readline()
+    left_elbow_data = guard_hand_file.readline()
+    left_wrist_data = guard_hand_file.readline()
 
 
 guard_arm_angle_avg = sum(guard_arm_angles) / len(guard_arm_angles)

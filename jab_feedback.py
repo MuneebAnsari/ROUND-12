@@ -9,13 +9,12 @@ right_wrist_data = jab_hand_file.readline()
 
 shoulder_wrist_angles = []
 
-while right_shoulder_data and right_elbow_data and right_wrist_data:
+while right_shoulder_data:
     x = right_shoulder_data.split("|")
     z = right_elbow_data.split("|")
     y = right_wrist_data.split("|")
 
     if x and right_elbow_data and right_wrist_data:
-
         # x,y coordinates for keypoints on guard arm
         right_shoulder_x, right_shoulder_y = x[1], x[2]
         right_elbow_x, right_elbow_y = z[1], z[2]
@@ -40,8 +39,9 @@ while right_shoulder_data and right_elbow_data and right_wrist_data:
     right_elbow_data = jab_hand_file.readline()
     right_wrist_data = jab_hand_file.readline()
 
+
 print(max(shoulder_wrist_angles))
-if 130 <= max(shoulder_wrist_angles) < 150:
+if 130 <= max(shoulder_wrist_angles) < 170:
     feedback_jab.write("Great extension on that jab. With a jab as controlled as yours you will be able to "
                        "keep your distance from your opponents.")
 elif 115 <= max(shoulder_wrist_angles) < 130:
@@ -49,3 +49,5 @@ elif 115 <= max(shoulder_wrist_angles) < 130:
                        "away from tough situations.")
 elif max(shoulder_wrist_angles) <= 115:
     feedback_jab.write("Throw that jab like you mean it. Half hartedness isn't going to get the job done.")
+elif max(shoulder_wrist_angles) >= 170:
+    feedback_jab.write("Loosen up! Extensive extension of the arm can cause injury.")
