@@ -2,8 +2,12 @@ import cv2
 import numpy as np
 import os
 import time
+import argparse
 # Playing video from file:
-cap = cv2.VideoCapture('jab_clearBG.mp4')
+parser = argparse.ArgumentParser(description='videoName')
+parser.add_argument('--vidName', type=str, default='')
+args = parser.parse_args()
+cap = cv2.VideoCapture(args.vidName)
 
 try:
     if not os.path.exists('data'):
