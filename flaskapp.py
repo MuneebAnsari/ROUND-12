@@ -2,6 +2,8 @@ import os
 from flask import Flask,render_template,request,url_for
 from flask_uploads import UploadSet, configure_uploads,ALL
 
+
+PEOPLE_FOLDER = os.path.join('static', 'people_photo')
 app=Flask(__name__)
 
 videos= UploadSet('videos',ALL)
@@ -31,17 +33,12 @@ def sending():
         guard_hand_file = open("./feedback_guard_hand.txt", "r")
         var =guard_hand_file.readline()
         os.system('python neck_torso_feedback.py')
-        guard_hand_file = open("./feedback_neck_torso.txt", "r")
-        var2 =guard_hand_file.readline()
-        return render_template('finalPage.html',variable=var,variable2=var2)
-
-@app.route('/getGuardInfo',methods=['GET','POST'])
-def getGuardStatus():
-    if request.method=='POST':
-        os.system('python guard_hand_feedback.py')
-        guard_hand_file = open("./feedback_guard_hand.txt", "r")
-        var =guard_hand_file.readline()
-        return render_template('finalPage.html',variable=var)
+        torso_file = open("./feedback_neck_torso.txt", "r")
+        var2 =torso_file.readline()
+        os.system('python jab_feedback.py')
+        jab_file=open("feedback_jab.txt","r")
+        var3 =jab_file.readline()
+        return render_template('finalPage.html',variable=var,variable2=var2,variable3=var3)
 
 if __name__=="__main__":
     app.run()

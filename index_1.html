@@ -1,0 +1,33 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html style="background-color:black;">
+<div style="background-color:black">
+
+  <h1 style=" color:white;text-align:center; font-weight:bold; margin-top:150px; font-family:'Verdana'">Welcome to Sports Video Analyzer</h1>
+
+
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<p style="text-align: center; margin-top: 40px; font-weight:bold;color:white">Please Upload your Video</p>
+    <form enctype="multipart/form-data" method=POST  action="http://127.0.0.1:5000/upload" >
+        <input type=file name=video style="margin-left:600px; color:white">
+        <button type="submit" class="btn btn-primary" onclick=" relocate_home()" style="background-color: cyan; color:black;margin-left: 500px;margin-top:70px;width:300px;height:70px; font-weight:bold;font-size:30px;">Upload Video</button>
+
+    </form>
+</div>
+
+
+  <script>
+      function relocate_home()
+      {
+
+      }
+      </script>
+</html>
