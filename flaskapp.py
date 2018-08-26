@@ -8,14 +8,14 @@ app=Flask(__name__)
 
 videos= UploadSet('videos',ALL)
 
-app.config['UPLOADED_VIDEOS_DEST']='./'
+app.config['UPLOADED_VIDEOS_DEST']='./static'
 configure_uploads(app,videos)
 
 @app.route('/upload',methods=['GET','POST'])
 def upload():
     if request.method=='POST' and 'video' in request.files:
-        filename=videos.save(request.files['video'])
-        os.system('python vidToScreenshots.py --vidName='+filename)
+        filename=videos.save(request.files['video'],name="Video.mp4")
+        os.system('python vidToScreenshots.py --vidName=Video.mp4')
         return render_template('uploadComplete.html')
 
 
@@ -24,6 +24,13 @@ def send():
     if request.method=='POST':
         os.system('python vidToScreenshots.py --vidName=')
         return "Done"
+
+
+@app.route('/gallery',methods=['GET','POST'])
+def sendImage():
+    if request.method=='GET':
+        return render_template('finalPage.html')
+
 
 @app.route('/trackMovement',methods=['GET','POST'])
 def sending():

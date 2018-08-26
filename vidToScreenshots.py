@@ -7,7 +7,7 @@ import argparse
 parser = argparse.ArgumentParser(description='videoName')
 parser.add_argument('--vidName', type=str, default='')
 args = parser.parse_args()
-cap = cv2.VideoCapture(args.vidName)
+cap = cv2.VideoCapture('./static/'+args.vidName)
 
 try:
     if not os.path.exists('data'):

@@ -59,6 +59,8 @@ if __name__ == '__main__':
 
     name = './ProccessedData/frame' + str(args.index) + '.jpg'
 
+    name2 = './static/frame' + str(args.index) + '.jpg'
+    cv2.imwrite(name2, image)
     cv2.imwrite(name, image)
     print("Saving Image")
     # while True:
