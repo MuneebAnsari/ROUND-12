@@ -405,19 +405,19 @@ class TfPoseEstimator:
 
                 # Track left shoulder, left elbow, left wrist
                 if i in [5, 6, 7]:
-                    block_hand_file.write("{},{},{}\n".format(human.body_parts[i], body_part.x, body_part.y))
+                    block_hand_file.write("{}|{}|{}\n".format(human.body_parts[i], body_part.x, body_part.y))
 
                 # Track right shoulder, right elbow, right wrist
                 if i in [2, 3, 4]:
-                    jab_hand_file.write("{},{},{}\n".format(human.body_parts[i], body_part.x, body_part.y))
+                    jab_hand_file.write("{}|{}|{}\n".format(human.body_parts[i], body_part.x, body_part.y))
 
                 # Track angle between neck, spine and torso
                 if i in [1, 8]:
-                    neck_torso_file.write("{},{},{}\n".format(human.body_parts[i], body_part.x, body_part.y))
+                    neck_torso_file.write("{}|{}|{}\n".format(human.body_parts[i], body_part.x, body_part.y))
 
                 # Track position of legs and angle between the legs and knees
                 if i in [9, 10, 11, 12, 13]:
-                    legs_file.write("{},{},{}\n".format(human.body_parts[i], body_part.x, body_part.y))
+                    legs_file.write("{}|{}|{}\n".format(human.body_parts[i], body_part.x, body_part.y))
 
                 center = (int(body_part.x * image_w + 0.5), int(body_part.y * image_h + 0.5))
                 centers[i] = center
