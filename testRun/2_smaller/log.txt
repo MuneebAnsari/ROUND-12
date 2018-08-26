@@ -1,0 +1,183 @@
+(tf-pose) C:\Users\Muneeb Ansari\PycharmProjects\pose-tf\tf-openpose>python vidToScreenshots.py
+Creating..../data/frame0.jpg
+Creating..../data/frame7.jpg
+Creating..../data/frame14.jpg
+Creating..../data/frame21.jpg
+Creating..../data/frame28.jpg
+Creating..../data/frame35.jpg
+Creating..../data/frame42.jpg
+Creating..../data/frame49.jpg
+Creating..../data/frame56.jpg
+Creating..../data/frame63.jpg
+
+(tf-pose) C:\Users\Muneeb Ansari\PycharmProjects\pose-tf\tf-openpose>python testsript.py
+[2018-08-25 14:23:30,376] [TfPoseEstimator] [INFO] loading graph from C:\Users\Muneeb Ansari\PycharmProjects\pose-tf\tf-openpose\models\graph/mobilenet_thin/graph_opt.pb(default size=432x368)
+[2018-08-25 14:23:30,376] [TfPoseEstimator] [INFO] loading graph from C:\Users\Muneeb Ansari\PycharmProjects\pose-tf\tf-openpose\models\graph/mobilenet_thin/graph_opt.pb(default size=432x368)
+2018-08-25 14:23:30.479949: I T:\src\github\tensorflow\tensorflow\core\platform\cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2
+[2018-08-25 14:23:33,725] [TfPoseEstimator] [DEBUG] inference+ original shape=1280x720
+[2018-08-25 14:23:33,725] [TfPoseEstimator] [DEBUG] inference+ original shape=1280x720
+[2018-08-25 14:23:34,404] [TfPoseEstimator] [DEBUG] inference- heatMat=216x184 pafMat=216x184
+[2018-08-25 14:23:34,404] [TfPoseEstimator] [DEBUG] inference- heatMat=216x184 pafMat=216x184
+[2018-08-25 14:23:34,404] [TfPoseEstimator] [DEBUG] estimate time=0.00000
+[2018-08-25 14:23:34,404] [TfPoseEstimator] [DEBUG] estimate time=0.00000
+[2018-08-25 14:23:34,404] [TfPoseEstimator] [INFO] inference image: ./data/frame0.jpg in 0.6789 seconds.
+[2018-08-25 14:23:34,404] [TfPoseEstimator] [INFO] inference image: ./data/frame0.jpg in 0.6789 seconds.
+BodyPart:3-(0.53, 0.56) score=0.53 0.5324074074074074 0.5597826086956522
+BodyPart:4-(0.51, 0.47) score=0.51 0.5092592592592593 0.47282608695652173
+BodyPart:5-(0.64, 0.34) score=0.65 0.6435185185185185 0.3423913043478261
+BodyPart:6-(0.63, 0.59) score=0.70 0.6296296296296297 0.5869565217391305
+BodyPart:7-(0.56, 0.42) score=0.73 0.5555555555555556 0.42391304347826086
+Saving Image
+[2018-08-25 14:23:39,259] [TfPoseEstimator] [INFO] loading graph from C:\Users\Muneeb Ansari\PycharmProjects\pose-tf\tf-openpose\models\graph/mobilenet_thin/graph_opt.pb(default size=432x368)
+[2018-08-25 14:23:39,259] [TfPoseEstimator] [INFO] loading graph from C:\Users\Muneeb Ansari\PycharmProjects\pose-tf\tf-openpose\models\graph/mobilenet_thin/graph_opt.pb(default size=432x368)
+2018-08-25 14:23:39.358816: I T:\src\github\tensorflow\tensorflow\core\platform\cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2
+[2018-08-25 14:23:42,596] [TfPoseEstimator] [DEBUG] inference+ original shape=1280x720
+[2018-08-25 14:23:42,596] [TfPoseEstimator] [DEBUG] inference+ original shape=1280x720
+[2018-08-25 14:23:43,261] [TfPoseEstimator] [DEBUG] inference- heatMat=216x184 pafMat=216x184
+[2018-08-25 14:23:43,261] [TfPoseEstimator] [DEBUG] inference- heatMat=216x184 pafMat=216x184
+[2018-08-25 14:23:43,261] [TfPoseEstimator] [DEBUG] estimate time=0.00000
+[2018-08-25 14:23:43,261] [TfPoseEstimator] [DEBUG] estimate time=0.00000
+[2018-08-25 14:23:43,261] [TfPoseEstimator] [INFO] inference image: ./data/frame14.jpg in 0.6657 seconds.
+[2018-08-25 14:23:43,261] [TfPoseEstimator] [INFO] inference image: ./data/frame14.jpg in 0.6657 seconds.
+BodyPart:3-(0.53, 0.56) score=0.58 0.5277777777777778 0.5597826086956522
+BodyPart:4-(0.51, 0.47) score=0.46 0.5092592592592593 0.47282608695652173
+BodyPart:5-(0.63, 0.34) score=0.67 0.6342592592592593 0.3423913043478261
+BodyPart:6-(0.62, 0.59) score=0.75 0.625 0.5869565217391305
+BodyPart:7-(0.55, 0.43) score=0.68 0.5509259259259259 0.42934782608695654
+Saving Image
+[2018-08-25 14:23:47,877] [TfPoseEstimator] [INFO] loading graph from C:\Users\Muneeb Ansari\PycharmProjects\pose-tf\tf-openpose\models\graph/mobilenet_thin/graph_opt.pb(default size=432x368)
+[2018-08-25 14:23:47,877] [TfPoseEstimator] [INFO] loading graph from C:\Users\Muneeb Ansari\PycharmProjects\pose-tf\tf-openpose\models\graph/mobilenet_thin/graph_opt.pb(default size=432x368)
+2018-08-25 14:23:47.982844: I T:\src\github\tensorflow\tensorflow\core\platform\cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2
+[2018-08-25 14:23:51,243] [TfPoseEstimator] [DEBUG] inference+ original shape=1280x720
+[2018-08-25 14:23:51,243] [TfPoseEstimator] [DEBUG] inference+ original shape=1280x720
+[2018-08-25 14:23:51,920] [TfPoseEstimator] [DEBUG] inference- heatMat=216x184 pafMat=216x184
+[2018-08-25 14:23:51,920] [TfPoseEstimator] [DEBUG] inference- heatMat=216x184 pafMat=216x184
+[2018-08-25 14:23:51,920] [TfPoseEstimator] [DEBUG] estimate time=0.00000
+[2018-08-25 14:23:51,920] [TfPoseEstimator] [DEBUG] estimate time=0.00000
+[2018-08-25 14:23:51,920] [TfPoseEstimator] [INFO] inference image: ./data/frame21.jpg in 0.6771 seconds.
+[2018-08-25 14:23:51,920] [TfPoseEstimator] [INFO] inference image: ./data/frame21.jpg in 0.6771 seconds.
+BodyPart:3-(0.53, 0.57) score=0.61 0.5277777777777778 0.5652173913043478
+BodyPart:4-(0.50, 0.47) score=0.51 0.5046296296296297 0.47282608695652173
+BodyPart:5-(0.63, 0.34) score=0.65 0.6342592592592593 0.3423913043478261
+BodyPart:6-(0.62, 0.59) score=0.74 0.6203703703703703 0.5869565217391305
+BodyPart:7-(0.55, 0.43) score=0.65 0.5509259259259259 0.42934782608695654
+Saving Image
+[2018-08-25 14:23:56,535] [TfPoseEstimator] [INFO] loading graph from C:\Users\Muneeb Ansari\PycharmProjects\pose-tf\tf-openpose\models\graph/mobilenet_thin/graph_opt.pb(default size=432x368)
+[2018-08-25 14:23:56,535] [TfPoseEstimator] [INFO] loading graph from C:\Users\Muneeb Ansari\PycharmProjects\pose-tf\tf-openpose\models\graph/mobilenet_thin/graph_opt.pb(default size=432x368)
+2018-08-25 14:23:56.635285: I T:\src\github\tensorflow\tensorflow\core\platform\cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2
+[2018-08-25 14:23:59,875] [TfPoseEstimator] [DEBUG] inference+ original shape=1280x720
+[2018-08-25 14:23:59,875] [TfPoseEstimator] [DEBUG] inference+ original shape=1280x720
+[2018-08-25 14:24:00,563] [TfPoseEstimator] [DEBUG] inference- heatMat=216x184 pafMat=216x184
+[2018-08-25 14:24:00,563] [TfPoseEstimator] [DEBUG] inference- heatMat=216x184 pafMat=216x184
+[2018-08-25 14:24:00,563] [TfPoseEstimator] [DEBUG] estimate time=0.00000
+[2018-08-25 14:24:00,563] [TfPoseEstimator] [DEBUG] estimate time=0.00000
+[2018-08-25 14:24:00,563] [TfPoseEstimator] [INFO] inference image: ./data/frame28.jpg in 0.6874 seconds.
+[2018-08-25 14:24:00,563] [TfPoseEstimator] [INFO] inference image: ./data/frame28.jpg in 0.6874 seconds.
+BodyPart:3-(0.52, 0.57) score=0.63 0.5231481481481481 0.5706521739130435
+BodyPart:4-(0.50, 0.47) score=0.47 0.5046296296296297 0.4673913043478261
+BodyPart:5-(0.63, 0.34) score=0.65 0.6296296296296297 0.3423913043478261
+BodyPart:6-(0.62, 0.59) score=0.78 0.6203703703703703 0.5869565217391305
+BodyPart:7-(0.55, 0.42) score=0.72 0.5462962962962963 0.42391304347826086
+Saving Image
+[2018-08-25 14:24:05,161] [TfPoseEstimator] [INFO] loading graph from C:\Users\Muneeb Ansari\PycharmProjects\pose-tf\tf-openpose\models\graph/mobilenet_thin/graph_opt.pb(default size=432x368)
+[2018-08-25 14:24:05,161] [TfPoseEstimator] [INFO] loading graph from C:\Users\Muneeb Ansari\PycharmProjects\pose-tf\tf-openpose\models\graph/mobilenet_thin/graph_opt.pb(default size=432x368)
+2018-08-25 14:24:05.268700: I T:\src\github\tensorflow\tensorflow\core\platform\cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2
+[2018-08-25 14:24:08,550] [TfPoseEstimator] [DEBUG] inference+ original shape=1280x720
+[2018-08-25 14:24:08,550] [TfPoseEstimator] [DEBUG] inference+ original shape=1280x720
+[2018-08-25 14:24:09,225] [TfPoseEstimator] [DEBUG] inference- heatMat=216x184 pafMat=216x184
+[2018-08-25 14:24:09,225] [TfPoseEstimator] [DEBUG] inference- heatMat=216x184 pafMat=216x184
+[2018-08-25 14:24:09,225] [TfPoseEstimator] [DEBUG] estimate time=0.00000
+[2018-08-25 14:24:09,225] [TfPoseEstimator] [DEBUG] estimate time=0.00000
+[2018-08-25 14:24:09,225] [TfPoseEstimator] [INFO] inference image: ./data/frame35.jpg in 0.6756 seconds.
+[2018-08-25 14:24:09,225] [TfPoseEstimator] [INFO] inference image: ./data/frame35.jpg in 0.6756 seconds.
+BodyPart:3-(0.44, 0.43) score=0.60 0.4351851851851852 0.42934782608695654
+BodyPart:4-(0.32, 0.41) score=0.64 0.3194444444444444 0.41304347826086957
+BodyPart:5-(0.64, 0.35) score=0.63 0.6435185185185185 0.34782608695652173
+BodyPart:6-(0.61, 0.58) score=0.73 0.6111111111111112 0.5815217391304348
+BodyPart:7-(0.56, 0.42) score=0.74 0.5555555555555556 0.41847826086956524
+Saving Image
+[2018-08-25 14:24:13,831] [TfPoseEstimator] [INFO] loading graph from C:\Users\Muneeb Ansari\PycharmProjects\pose-tf\tf-openpose\models\graph/mobilenet_thin/graph_opt.pb(default size=432x368)
+[2018-08-25 14:24:13,831] [TfPoseEstimator] [INFO] loading graph from C:\Users\Muneeb Ansari\PycharmProjects\pose-tf\tf-openpose\models\graph/mobilenet_thin/graph_opt.pb(default size=432x368)
+2018-08-25 14:24:13.932565: I T:\src\github\tensorflow\tensorflow\core\platform\cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2
+[2018-08-25 14:24:17,162] [TfPoseEstimator] [DEBUG] inference+ original shape=1280x720
+[2018-08-25 14:24:17,162] [TfPoseEstimator] [DEBUG] inference+ original shape=1280x720
+[2018-08-25 14:24:17,836] [TfPoseEstimator] [DEBUG] inference- heatMat=216x184 pafMat=216x184
+[2018-08-25 14:24:17,836] [TfPoseEstimator] [DEBUG] inference- heatMat=216x184 pafMat=216x184
+[2018-08-25 14:24:17,836] [TfPoseEstimator] [DEBUG] estimate time=0.00000
+[2018-08-25 14:24:17,836] [TfPoseEstimator] [DEBUG] estimate time=0.00000
+[2018-08-25 14:24:17,836] [TfPoseEstimator] [INFO] inference image: ./data/frame42.jpg in 0.6743 seconds.
+[2018-08-25 14:24:17,836] [TfPoseEstimator] [INFO] inference image: ./data/frame42.jpg in 0.6743 seconds.
+BodyPart:3-(0.51, 0.57) score=0.59 0.5138888888888888 0.5706521739130435
+BodyPart:4-(0.48, 0.43) score=0.48 0.47685185185185186 0.43478260869565216
+BodyPart:5-(0.64, 0.35) score=0.65 0.6435185185185185 0.3532608695652174
+BodyPart:6-(0.62, 0.59) score=0.77 0.6203703703703703 0.592391304347826
+BodyPart:7-(0.56, 0.43) score=0.70 0.5555555555555556 0.42934782608695654
+Saving Image
+[2018-08-25 14:24:22,495] [TfPoseEstimator] [INFO] loading graph from C:\Users\Muneeb Ansari\PycharmProjects\pose-tf\tf-openpose\models\graph/mobilenet_thin/graph_opt.pb(default size=432x368)
+[2018-08-25 14:24:22,495] [TfPoseEstimator] [INFO] loading graph from C:\Users\Muneeb Ansari\PycharmProjects\pose-tf\tf-openpose\models\graph/mobilenet_thin/graph_opt.pb(default size=432x368)
+2018-08-25 14:24:22.589748: I T:\src\github\tensorflow\tensorflow\core\platform\cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2
+[2018-08-25 14:24:25,844] [TfPoseEstimator] [DEBUG] inference+ original shape=1280x720
+[2018-08-25 14:24:25,844] [TfPoseEstimator] [DEBUG] inference+ original shape=1280x720
+[2018-08-25 14:24:26,512] [TfPoseEstimator] [DEBUG] inference- heatMat=216x184 pafMat=216x184
+[2018-08-25 14:24:26,512] [TfPoseEstimator] [DEBUG] inference- heatMat=216x184 pafMat=216x184
+[2018-08-25 14:24:26,512] [TfPoseEstimator] [DEBUG] estimate time=0.00000
+[2018-08-25 14:24:26,512] [TfPoseEstimator] [DEBUG] estimate time=0.00000
+[2018-08-25 14:24:26,527] [TfPoseEstimator] [INFO] inference image: ./data/frame49.jpg in 0.6836 seconds.
+[2018-08-25 14:24:26,527] [TfPoseEstimator] [INFO] inference image: ./data/frame49.jpg in 0.6836 seconds.
+BodyPart:3-(0.53, 0.54) score=0.28 0.5324074074074074 0.5434782608695652
+BodyPart:4-(0.51, 0.47) score=0.42 0.5138888888888888 0.4673913043478261
+BodyPart:5-(0.64, 0.35) score=0.65 0.6435185185185185 0.34782608695652173
+BodyPart:6-(0.62, 0.59) score=0.77 0.6157407407407407 0.5869565217391305
+BodyPart:7-(0.56, 0.43) score=0.55 0.5555555555555556 0.43478260869565216
+Saving Image
+[2018-08-25 14:24:31,160] [TfPoseEstimator] [INFO] loading graph from C:\Users\Muneeb Ansari\PycharmProjects\pose-tf\tf-openpose\models\graph/mobilenet_thin/graph_opt.pb(default size=432x368)
+[2018-08-25 14:24:31,160] [TfPoseEstimator] [INFO] loading graph from C:\Users\Muneeb Ansari\PycharmProjects\pose-tf\tf-openpose\models\graph/mobilenet_thin/graph_opt.pb(default size=432x368)
+2018-08-25 14:24:31.259815: I T:\src\github\tensorflow\tensorflow\core\platform\cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2
+[2018-08-25 14:24:34,533] [TfPoseEstimator] [DEBUG] inference+ original shape=1280x720
+[2018-08-25 14:24:34,533] [TfPoseEstimator] [DEBUG] inference+ original shape=1280x720
+[2018-08-25 14:24:35,223] [TfPoseEstimator] [DEBUG] inference- heatMat=216x184 pafMat=216x184
+[2018-08-25 14:24:35,223] [TfPoseEstimator] [DEBUG] inference- heatMat=216x184 pafMat=216x184
+[2018-08-25 14:24:35,239] [TfPoseEstimator] [DEBUG] estimate time=0.01562
+[2018-08-25 14:24:35,239] [TfPoseEstimator] [DEBUG] estimate time=0.01562
+[2018-08-25 14:24:35,239] [TfPoseEstimator] [INFO] inference image: ./data/frame56.jpg in 0.7066 seconds.
+[2018-08-25 14:24:35,239] [TfPoseEstimator] [INFO] inference image: ./data/frame56.jpg in 0.7066 seconds.
+BodyPart:3-(0.53, 0.56) score=0.48 0.5277777777777778 0.5597826086956522
+BodyPart:4-(0.51, 0.46) score=0.55 0.5092592592592593 0.46195652173913043
+BodyPart:5-(0.64, 0.35) score=0.63 0.6435185185185185 0.34782608695652173
+BodyPart:6-(0.62, 0.59) score=0.76 0.6157407407407407 0.5869565217391305
+BodyPart:7-(0.56, 0.43) score=0.63 0.5555555555555556 0.42934782608695654
+Saving Image
+[2018-08-25 14:24:39,918] [TfPoseEstimator] [INFO] loading graph from C:\Users\Muneeb Ansari\PycharmProjects\pose-tf\tf-openpose\models\graph/mobilenet_thin/graph_opt.pb(default size=432x368)
+[2018-08-25 14:24:39,918] [TfPoseEstimator] [INFO] loading graph from C:\Users\Muneeb Ansari\PycharmProjects\pose-tf\tf-openpose\models\graph/mobilenet_thin/graph_opt.pb(default size=432x368)
+2018-08-25 14:24:40.032294: I T:\src\github\tensorflow\tensorflow\core\platform\cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2
+[2018-08-25 14:24:43,302] [TfPoseEstimator] [DEBUG] inference+ original shape=1280x720
+[2018-08-25 14:24:43,302] [TfPoseEstimator] [DEBUG] inference+ original shape=1280x720
+[2018-08-25 14:24:44,009] [TfPoseEstimator] [DEBUG] inference- heatMat=216x184 pafMat=216x184
+[2018-08-25 14:24:44,009] [TfPoseEstimator] [DEBUG] inference- heatMat=216x184 pafMat=216x184
+[2018-08-25 14:24:44,014] [TfPoseEstimator] [DEBUG] estimate time=0.00399
+[2018-08-25 14:24:44,014] [TfPoseEstimator] [DEBUG] estimate time=0.00399
+[2018-08-25 14:24:44,016] [TfPoseEstimator] [INFO] inference image: ./data/frame63.jpg in 0.7142 seconds.
+[2018-08-25 14:24:44,016] [TfPoseEstimator] [INFO] inference image: ./data/frame63.jpg in 0.7142 seconds.
+BodyPart:3-(0.53, 0.56) score=0.61 0.5324074074074074 0.5597826086956522
+BodyPart:4-(0.51, 0.47) score=0.69 0.5138888888888888 0.4673913043478261
+BodyPart:5-(0.65, 0.35) score=0.62 0.6481481481481481 0.34782608695652173
+BodyPart:6-(0.62, 0.59) score=0.74 0.6203703703703703 0.5869565217391305
+BodyPart:7-(0.56, 0.43) score=0.67 0.5601851851851852 0.42934782608695654
+Saving Image
+[2018-08-25 14:24:48,803] [TfPoseEstimator] [INFO] loading graph from C:\Users\Muneeb Ansari\PycharmProjects\pose-tf\tf-openpose\models\graph/mobilenet_thin/graph_opt.pb(default size=432x368)
+[2018-08-25 14:24:48,803] [TfPoseEstimator] [INFO] loading graph from C:\Users\Muneeb Ansari\PycharmProjects\pose-tf\tf-openpose\models\graph/mobilenet_thin/graph_opt.pb(default size=432x368)
+2018-08-25 14:24:48.897255: I T:\src\github\tensorflow\tensorflow\core\platform\cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2
+[2018-08-25 14:24:52,161] [TfPoseEstimator] [DEBUG] inference+ original shape=1280x720
+[2018-08-25 14:24:52,161] [TfPoseEstimator] [DEBUG] inference+ original shape=1280x720
+[2018-08-25 14:24:52,833] [TfPoseEstimator] [DEBUG] inference- heatMat=216x184 pafMat=216x184
+[2018-08-25 14:24:52,833] [TfPoseEstimator] [DEBUG] inference- heatMat=216x184 pafMat=216x184
+[2018-08-25 14:24:52,833] [TfPoseEstimator] [DEBUG] estimate time=0.00000
+[2018-08-25 14:24:52,833] [TfPoseEstimator] [DEBUG] estimate time=0.00000
+[2018-08-25 14:24:52,833] [TfPoseEstimator] [INFO] inference image: ./data/frame7.jpg in 0.6719 seconds.
+[2018-08-25 14:24:52,833] [TfPoseEstimator] [INFO] inference image: ./data/frame7.jpg in 0.6719 seconds.
+BodyPart:3-(0.53, 0.55) score=0.47 0.5277777777777778 0.5543478260869565
+BodyPart:4-(0.51, 0.47) score=0.38 0.5092592592592593 0.47282608695652173
+BodyPart:5-(0.64, 0.35) score=0.66 0.6388888888888888 0.34782608695652173
+BodyPart:6-(0.62, 0.59) score=0.73 0.625 0.5869565217391305
+BodyPart:7-(0.55, 0.42) score=0.69 0.5509259259259259 0.42391304347826086
+Saving Image
