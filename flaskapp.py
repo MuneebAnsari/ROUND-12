@@ -29,5 +29,13 @@ def sending():
         os.system('python testscript.py')
         return render_template('finalPage.html')
 
+@app.route('/getGuardInfo',methods=['GET','POST'])
+def getGuardStatus():
+    if request.method=='POST':
+        os.system('python guard_hand_feedback.py')
+        # guard_hand_file = open("./feedback_modules/feedback_guard_hand.txt", "r")
+        # print(guard_hand_file)
+        return render_template('finalPage.html')
+
 if __name__=="__main__":
     app.run()
