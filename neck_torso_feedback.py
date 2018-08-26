@@ -14,23 +14,24 @@ while nose_data:
     neck_data = neck_torso_file.readline().split("|")
     torso_data = neck_torso_file.readline().split("|")
 
-    # x,y coordinates for keypoints from neck to torso
-    nose_x, nose_y = x[1], x[2]
-    neck_x, neck_y = neck_data[1], neck_data[2]
-    torso_x, torso_y = torso_data[1], torso_data[2]
+    if x and neck_data and torso_data:
+        # x,y coordinates for keypoints from neck to torso
+        nose_x, nose_y = x[1], x[2]
+        neck_x, neck_y = neck_data[1], neck_data[2]
+        torso_x, torso_y = torso_data[1], torso_data[2]
 
-    vector_A = (float(nose_x) - float(neck_x), float(nose_y) - float(neck_y))
-    vector_B = (float(torso_x) - float(neck_x), float(torso_y) - float(neck_y))
+        vector_A = (float(nose_x) - float(neck_x), float(nose_y) - float(neck_y))
+        vector_B = (float(torso_x) - float(neck_x), float(torso_y) - float(neck_y))
 
-    A_dot_B = (vector_A[0] * vector_B[0]) + (vector_A[1] * vector_B[1])
+        A_dot_B = (vector_A[0] * vector_B[0]) + (vector_A[1] * vector_B[1])
 
-    mag_A = math.sqrt(vector_A[0] ** 2 + vector_A[1] ** 2)
-    mag_B = math.sqrt(vector_B[0] ** 2 + vector_B[1] ** 2)
+        mag_A = math.sqrt(vector_A[0] ** 2 + vector_A[1] ** 2)
+        mag_B = math.sqrt(vector_B[0] ** 2 + vector_B[1] ** 2)
 
-    # Angle of neck and torso
-    neck_torso_angle = math.degrees(math.acos(A_dot_B / (mag_A * mag_B)))
+        # Angle of neck and torso
+        neck_torso_angle = math.degrees(math.acos(A_dot_B / (mag_A * mag_B)))
 
-    neck_torso_angles.append(neck_torso_angle)
+        neck_torso_angles.append(neck_torso_angle)
 
     nose_data = neck_torso_file.readline()
 
