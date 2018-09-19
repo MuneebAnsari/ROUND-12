@@ -1,6 +1,6 @@
 Round 12 is a personal coaching application which allows boxers to demonstrate their punching technique and recieve feedback on their balance, positioning and overall punching technique.
 
-Round 12 was created by [Muneeb Ansari](https://github.com/MuneebAnsari) and [Akram EldamatyHackThe6ix](https://github.com/AkramEld) as hack for Hack The 6ix 2018. For additional information please visit our submission on [devpost](https://devpost.com/software/hackthe6ix-g28jop)
+Round 12 was created by [Muneeb Ansari](https://github.com/MuneebAnsari) and [Akram Eldamaty](https://github.com/AkramEld) as hack for Hack The 6ix 2018. For additional information please visit our submission on [devpost](https://devpost.com/software/hackthe6ix-g28jop)
 
 Round 12 is an application that makes use of computer vision to detect and track keypoints on the humman body, which is known as human pose estimation. We used [tf-pose-estimation](https://github.com/ildoonet/tf-pose-estimation), a tensorflow and OpenCv based pose estimation library for python to detect and return the keypoints of the boxer.
 
