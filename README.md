@@ -4,9 +4,9 @@ Round 12 was created by [Muneeb Ansari](https://github.com/MuneebAnsari) and [Ak
 
 Round 12 is an application that makes use of computer vision to detect and track keypoints on the humman body, which is known as human pose estimation. We used [tf-pose-estimation](https://github.com/ildoonet/tf-pose-estimation), a tensorflow and OpenCv based pose estimation library for python to detect and return the keypoints of the boxer.
 
-Specific keypoints that were tracked include; (Head, left arm (shoulder, elbow wrist), right arm (shoulder, elbow, wrist), neck, torso, left leg, right leg)
+Specific keypoints that were tracked include; (Head, left arm (shoulder, elbow wrist), right arm (shoulder, elbow, wrist), neck, torso, left leg, right leg). Visual found below;
 
-![alt text](https://github.com/MuneebAnsari/ROUND-12/blob/master/testRun/full%20body/frame1ee625f7892a483dadf1c6a2cde9bfe1.jpg | width=100)
+<img src="https://github.com/MuneebAnsari/ROUND-12/blob/master/testRun/full%20body/frame1ee625f7892a483dadf1c6a2cde9bfe1.jpg" height="24">
 
 We processed a video of a boxer performing a punch, by analyzing the video in frames and determining the movement of the keypoints from frame to frame.
 
