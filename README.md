@@ -15,8 +15,9 @@ We processed a video of a boxer performing a punch, by analyzing the video in fr
 
 Depending on the relative poisition of the keypoints and the angles formed between certain keypoints we were able to determine the "correctness" of the punch. We compared the movement of the keypoints throuhgout the punch within a margin to determine if the punch was correct by focusing on the position of the boxer's guard/block arm, posture/positioning and jab extension.
 
-Written feedback is provided on what the boxer did well and what the boxer should improve.
+Written feedback is provided on what the boxer did well and what the boxer should improve on.
 
+<img src="https://github.com/MuneebAnsari/ROUND-12/blob/master/testRun/test_img.PNG" width="500" height="250">
 
 Next Steps: 
 - Use data from professional boxers to train a model that determines what a correct punch truly is.
