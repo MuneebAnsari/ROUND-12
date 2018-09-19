@@ -6,6 +6,8 @@ Round 12 is an application that makes use of computer vision to detect and track
 
 Specific keypoints that were tracked include; (Head, left arm (shoulder, elbow wrist), right arm (shoulder, elbow, wrist), neck, torso, left leg, right leg)
 
+![alt text](https://github.com/MuneebAnsari/ROUND-12/blob/master/testRun/full%20body/frame1ee625f7892a483dadf1c6a2cde9bfe1.jpg)
+
 We processed a video of a boxer performing a punch, by analyzing the video in frames and determining the movement of the keypoints from frame to frame.
 
 Depending on the relative poisition of the keypoints and the angles formed between certain keypoints we were able to determine the "correctness" of the punch. We compared the movement of the keypoints throuhgout the punch within a margin to determine if the punch was correct by focusing on the position of the boxer's guard/block arm, posture/positioning and jab extension.
